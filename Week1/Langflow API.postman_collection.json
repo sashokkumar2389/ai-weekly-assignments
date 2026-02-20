@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "324ffe16-b9c5-4c84-b43e-f34e7adb0f45",
+    "name": "Langflow API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46068541",
+    "_collection_link": "https://go.postman.co/collection/46068541-324ffe16-b9c5-4c84-b43e-f34e7adb0f45?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Testcase_Generator",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ehM-UmBt3i5aFL_a-e8NmeI6lBudFCU758x-OXxSE24",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"output_type\": \"chat\",\n    \"input_type\": \"chat\",\n    \"input_value\": \"Generate the testcases for valid bank cheque\",\n    \"tweaks\": {\n        \"GroqModel-no2YN\": {\n            \"api_key\": \"akgroqapikey\",\n            \"model_name\": \"llama-3.3-70b-versatile\",\n            \"temperature\": 0.2\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/adc23e51-7735-4bfc-a74d-98ba2bb51c9d",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "adc23e51-7735-4bfc-a74d-98ba2bb51c9d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User_Story_review_agent",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ehM-UmBt3i5aFL_a-e8NmeI6lBudFCU758x-OXxSE24",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"output_type\": \"text\",\n    \"input_type\": \"text\",\n    \"input_value\": \"review user story\",\n    \"tweaks\": {\n        \"GroqModel-ORQmo\": {\n            \"api_key\": \"akgroqapikey\",\n            \"model_name\": \"llama-3.3-70b-versatile\",\n            \"temperature\": 0.1\n        },\n        \"GroqModel-8G4eq\": {\n            \"api_key\": \"akgroqapikey\",\n            \"model_name\": \"llama-3.3-70b-versatile\",\n            \"temperature\": 0.1\n        },\n        \"ParserComponent-S7W42\": {\n            \"pattern\": \"Text: {\\\"source\\\": \\\"https://shaneagle21ai3.atlassian.net/rest/api/3/search/jql\\\", \\\"status_code\\\": 200, \\\"response_headers\\\": {\\\"content-type\\\": \\\"application/json;charset=UTF-8\\\", \\\"transfer-encoding\\\": \\\"chunked\\\", \\\"connection\\\": \\\"keep-alive\\\", \\\"date\\\": \\\"Fri, 06 Feb 2026 05:13:41 GMT\\\", \\\"server\\\": \\\"AtlassianEdge\\\"}, \\\"result\\\": {\\\"issues\\\": [{\\\"expand\\\": \\\"renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations\\\", \\\"id\\\": \\\"10017\\\", \\\"self\\\": \\\"https://shaneagle21ai3.atlassian.net/rest/api/3/issue/10017\\\", \\\"key\\\": \\\"SCRUM-15\\\", \\\"fields\\\": {\\\"summary\\\": \\\"Wards Dashboard View Request\\\", \\\"description\\\": {\\\"type\\\": \\\"doc\\\", \\\"version\\\": 1, \\\"content\\\": [{\\\"type\\\": \\\"paragraph\\\", \\\"content\\\": [{\\\"type\\\": \\\"text\\\", \\\"text\\\": \\\"As a user, I want to wards dashboard view request so that the related functionality works as expected.Acceptance Criteria:Given a user with valid access, when they open the dashboard, then relevant data and visualizations should be displayed correctly without delay.\\\"}]}]}, \\\"reporter\\\": {\\\"self\\\": \\\"https://shaneagle21ai3.atlassian.net/rest/api/3/user?accountId=712020%3Ae8408021-8086-4589-b7f7-e79d937f235d\\\", \\\"accountId\\\": \\\"712020:e8408021-8086-4589-b7f7-e79d937f235d\\\", \\\"displayName\\\": \\\"Shan Eagle\\\", \\\"active\\\": true}, \\\"status\\\": {\\\"name\\\": \\\"Idea\\\"}}], \\\"isLast\\\": true}}\"\n        }\n    }\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/633e87a7-0c82-410c-b6b5-e082cb815744",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "633e87a7-0c82-410c-b6b5-e082cb815744"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Document_Extract",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ehM-UmBt3i5aFL_a-e8NmeI6lBudFCU758x-OXxSE24",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"output_type\": \"text\",\n  \"input_type\": \"text\",\n  \"input_value\": \"Document extract from invoice pdf\",\n  \"tweaks\": {\n    \"Prompt Template-DtXsC\": {\n      \"template\": \"Answer User's questions based on document below:\\n\\n---\\n\\nS a m c o INVOICE\\nNo. INV-9263\\nBilled to\\nShan and Co\\nadmin@samco.com\\nIssue Date: 10/15/2025\\nSubtotal: 5,000,000.00\\nTotal: 5,000,000.00\\nPayments: 0.00\\nDue (USD): $5,000,000.00\\nDESCRIPTION QTY UNIT PRICE LINE TOTAL\\n500.00 10,000.00 5,000,000.00\\n\\n----\\n\\nQuestions:\\n\\nget the invoice amounts only in the document. ONLY the invoice amounts in following format:\\n\\nSubtotal:\\nHst amount:\\nTotal Amount:\"\n    },\n    \"GroqModel-gwi0e\": {\n      \"api_key\": \"akgroqapikey\",\n      \"model_name\": \"groq/compound\",\n      \"temperature\": 0.1\n    }\n  }\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/179957c4-a613-42da-b43b-99fae0219eec",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "179957c4-a613-42da-b43b-99fae0219eec"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
