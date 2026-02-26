@@ -86,3 +86,19 @@ Implement complete RAG pipeline with multiple search and ranking strategies.
    - **Summarization** - Generate concise summaries of results
    - **Deduplication** - Identify and remove duplicate content
    - **Complete RAG Flow** - End-to-end pipeline orchestration
+
+
+   ## Week 4: AI Nutri Agent System 
+
+AI Nutri Agent — Automated Food Nutrition Analysis and Tracking System - Web Application design using USDA/Canadian food database implemented as VectorDB. generated using Vibe coding (OpenAI ChatGpt- 5.2)
+Design Guidelines Followed
+
+Simple architecture
+Small components
+Easy testing
+No microservices
+API-first approach
+DB second
+Web third
+
+
