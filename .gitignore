@@ -3,9 +3,12 @@
 .env.local
 .env.*.local
 
-# Dependencies
+# Dependencies - IMPORTANT: Never commit node_modules!
+# Run 'npm install' to install dependencies locally
 node_modules/
-package-lock.json
+# But DO commit these:
+# - package.json
+# - package-lock.json (for reproducibility)
 yarn.lock
 
 # Build outputs
