@@ -91,14 +91,53 @@ Implement complete RAG pipeline with multiple search and ranking strategies.
    ## Week 4: AI Nutri Agent System 
 
 AI Nutri Agent — Automated Food Nutrition Analysis and Tracking System - Web Application design using USDA/Canadian food database implemented as VectorDB. generated using Vibe coding (OpenAI ChatGpt- 5.2)
-Design Guidelines Followed
 
-Simple architecture
-Small components
-Easy testing
-No microservices
-API-first approach
-DB second
-Web third
+### Design Guidelines Followed
 
+- Simple architecture
+- Small components
+- Easy testing
+- No microservices
+- API-first approach
+- DB second
+- Web third
 
+---
+
+## Week 5: Resume RAG Agent
+
+### Project Overview
+
+**Resume RAG Agent** is an intelligent **resume search system** using hybrid search with AI-powered ranking. It combines:
+
+- **Vector Search** - Semantic matching using Mistral AI embeddings (1024 dimensions)
+- **BM25 Search** - Keyword-based full-text search on skills and experience
+- **Hybrid Approach** - Merges both searches with intelligent result ranking
+- **LLM Re-ranking** - Groq API provides AI-powered candidate ranking
+
+**Technology Stack:**
+- Backend: Node.js + Express + TypeScript
+- Database: MongoDB Atlas with vector indexing
+- APIs: Mistral (embeddings), Groq (LLM ranking)
+- Frontend: React + Vite (optional)
+
+**Key Features:**
+- Fast semantic and keyword search
+- LLM-powered intelligent re-ranking
+- Request tracing and performance logging
+- REST API with versioning (/v1/)
+- Type-safe TypeScript codebase
+
+### Quick Start
+
+See `Week5/QUICK_START.md` for 5-minute setup instructions.
+
+For complete documentation, refer to:
+- `Week5/WEEK5_SUMMARY.md` - Full project overview
+- `Week5/ARCHITECTURE_DIAGRAMS.md` - System architecture and diagrams
+- `Week5/COMPLETE_CHECKLIST.md` - Setup verification checklist
+- `resumes-ai-rag-1/docs/` - Additional technical guides
+
+---
+
+````

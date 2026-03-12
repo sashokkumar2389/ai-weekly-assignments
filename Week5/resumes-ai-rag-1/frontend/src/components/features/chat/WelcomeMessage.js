@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { BotBubble } from './BotBubble';
+export function WelcomeMessage() {
+    const now = new Date();
+    return (_jsx(BotBubble, { timestamp: now, children: _jsxs("div", { className: "space-y-3", children: [_jsx("p", { className: "font-semibold text-text-primary", children: "Welcome to RecruitBot! \uD83D\uDC4B" }), _jsx("p", { className: "text-text-muted", children: "I help you discover top candidates quickly using three powerful search methods:" }), _jsxs("ul", { className: "space-y-2 text-xs", children: [_jsxs("li", { className: "flex gap-2", children: [_jsx("span", { className: "text-primary", children: "\uD83D\uDD0D" }), _jsxs("span", { children: [_jsx("strong", { children: "Vector Search:" }), " Semantic similarity using AI embeddings"] })] }), _jsxs("li", { className: "flex gap-2", children: [_jsx("span", { className: "text-score-bm25", children: "\uD83D\uDCDD" }), _jsxs("span", { children: [_jsx("strong", { children: "BM25 Keyword:" }), " Precise keyword and phrase matching"] })] }), _jsxs("li", { className: "flex gap-2", children: [_jsx("span", { className: "text-score-hybrid", children: "\u26A1" }), _jsxs("span", { children: [_jsx("strong", { children: "Hybrid:" }), " Combined results with customizable weights"] })] })] }), _jsx("p", { className: "text-text-muted text-xs", children: "Try a query below or use one of the suggestions!" })] }) }));
+}
+//# sourceMappingURL=WelcomeMessage.js.map

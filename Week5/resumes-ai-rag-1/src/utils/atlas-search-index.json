@@ -1,0 +1,39 @@
+{
+    "mappings": {
+        "dynamic": false,
+        "fields": {
+            "text": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "skills": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "role": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "experienceSummary": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "name": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "company": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "location": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            },
+            "email": {
+                "type": "string",
+                "analyzer": "lucene.standard"
+            }
+        }
+    }
+}

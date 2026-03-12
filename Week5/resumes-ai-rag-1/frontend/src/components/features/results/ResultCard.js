@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { motion } from 'framer-motion';
+import { Card } from '@/components/ui/card';
+import { RankBadge } from './RankBadge';
+import { ScorePill } from './ScorePill';
+import { truncateText } from '@/lib/utils/formatters';
+export function ResultCard({ result, rank, searchType, onSelect }) {
+    return (_jsx(motion.div, { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, transition: { delay: rank * 0.06 }, children: _jsx(Card, { className: "cursor-pointer overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-white/[0.12]", onClick: () => onSelect(result.candidateId || result.resumeId || ''), children: _jsxs("div", { className: "p-4 space-y-3", children: [_jsxs("div", { className: "flex items-start justify-between gap-3", children: [_jsxs("div", { className: "flex items-center gap-3 flex-1 min-w-0", children: [_jsx(RankBadge, { rank: rank }), _jsxs("div", { className: "flex-1 min-w-0", children: [_jsxs("h3", { className: "text-base font-semibold text-text-primary truncate", children: ["Candidate #", rank] }), _jsx("p", { className: "text-xs text-text-muted", children: result.tier })] })] }), _jsx(ScorePill, { score: result.score, searchType: searchType })] }), _jsxs("div", { className: "space-y-1", children: [_jsx("p", { className: "text-xs font-medium text-text-muted", children: "Key Matches:" }), _jsx("div", { className: "flex flex-wrap gap-1", children: result.keyMatches.map((match, idx) => (_jsx("span", { className: "text-xs bg-primary/10 text-primary px-2 py-1 rounded", children: match }, idx))) })] }), _jsx("p", { className: "text-xs text-text-muted leading-relaxed line-clamp-3", children: truncateText(result.rationale, 200) }), result.gaps.length > 0 && (_jsxs("div", { className: "space-y-1", children: [_jsx("p", { className: "text-xs font-medium text-text-muted", children: "Gaps:" }), _jsx("ul", { className: "text-xs text-red-400 list-disc list-inside space-y-0.5", children: result.gaps.map((gap, idx) => (_jsx("li", { children: gap }, idx))) })] }))] }) }) }));
+}
+//# sourceMappingURL=ResultCard.js.map
